@@ -12,7 +12,7 @@ class createTable
   struct listcomponents
   {
     string first, last;
-    int phone;
+    long int phone;
   }
   
   struct table
@@ -23,12 +23,12 @@ class createTable
     
  public:
   
-  void createTable (table values[63]);
+  void createTable (table values[90]);
   /*
     Call function for to make a table
   */
 
-  int createhashvalue (int phonenumber);
+  int createhashvalue (long int phonenumber);
   /*
     Call function to make a hash value
   */

@@ -1,13 +1,14 @@
 #ifndef "creatTable.h"
 #include "createTable.h"
 
-void createTable (table values[63])
+void createTable (table values[90])
 {
   string first, last, filename;
-  int phoneNumber, x;
+  long int phoneNumber;
+  int x;
   listcomponents info;
   ifstream inFile;
-  for(int i=0; i<63; i++)
+  for(int i=0; i<90; i++)
     {
       values[i].hashvalue = i;
     }
@@ -36,14 +37,14 @@ void createTable (table values[63])
 
   inFile.close;
 
-  for(int i=0; i<63; i++)
+  for(int i=0; i<90; i++)
     {
       values[i].LIST.sort();
     }
       
 }
 
-int createhashvalue (int phonenumber)
+int createhashvalue (long int phonenumber)
 {
   int sum=0;
   while(phonenumber>0)
